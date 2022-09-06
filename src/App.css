@@ -1,0 +1,12 @@
+footer{
+    padding-top: 1rem;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    border: solid 0.3rem transparent;
+}
+footer a:hover{
+    color: #000;
+    border-bottom-color: #000;
+}
