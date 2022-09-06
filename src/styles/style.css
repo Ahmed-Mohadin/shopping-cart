@@ -7,6 +7,7 @@
     --txtColor2: #000000;
 
     --accentColor1: #9E829C;
+    --accentColor2: #3A3E3B;
 
     --defaultRadius: 0.3rem;
 }
@@ -17,6 +18,7 @@
 }
 html{
     font-family: sans-serif, 'Times New Roman', Times, serif;
+    position: relative;
 }
 body{
     background-color: var(--bgColor1);
@@ -30,7 +32,7 @@ nav{
     background-color: var(--bgColor2);
     padding: 1rem 2rem;
 }
-nav a{
+a{
     text-decoration: none;
     color: var(--txtColor1);
 }
@@ -80,6 +82,82 @@ nav .cart-count{
     font-weight: bold;
 }
 
+/* .home */
+.home{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    justify-items:center;
+    align-items: center;
+    height: 100vh;
+}
+.home .home-text{
+    letter-spacing: 0.3rem;
+}
+.home .home-text .home-title{
+    font-size: 0.9em;
+    color: #9E829C;
+}
+.home .home-text .home-paragraph{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.home .home-image img{
+    width: 90%;
+}
+.btn{
+    font-size: 2em;
+    outline: none;
+    border: solid 0.2rem var(--txtColor1);
+    padding: 0.4rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background-color: var(--bgColor2);
+}
+.home .home-text .btn:hover{
+    background-color: var(--accentColor1);
+}
+
+/* .about */
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.about div{
+    margin: 2rem 0rem;
+}
+.about i{
+    font-size: 4em;
+    margin: 0rem 2rem;
+}
+.about a{
+    color: #000000;
+}
+.about a:hover{
+    color: var(--accentColor1);
+}
+.about p{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+/* .products */
+.products{
+    
+}
+
+/* .product-card */
+.product-card{
+
+}
+.product-card img{
+    width: 20%;
+}
 
 /* footer */
 footer{
