@@ -1,19 +1,7 @@
 import React from 'react';
 import CartProduct from './CartProduct';
-import { useState } from 'react';
 
-function ShoppingCart({ totalCartItems }) {
-  const [shoppingCart, setProducts] = useState([
-    {
-      id: 1,
-      name: 'Iphone 1',
-      image:
-        'https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-11-red-back.png?v=5',
-      desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, natus eaque dicta dignissimos distinctio adipisci!',
-      short: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit.',
-      price: 3000,
-    },
-  ]);
+function ShoppingCart({ shoppingCart, removeFromCart, add, sub, total }) {
   const empty = (
     <div className="p-2 d-flex justify-content-center align-items-center">
       Your cart is empty
@@ -22,14 +10,20 @@ function ShoppingCart({ totalCartItems }) {
   return (
     <div className="my-cart">
       {shoppingCart.map((product) => (
-        <CartProduct product={product} key={product.id} />
+        <CartProduct
+          product={product}
+          key={product.id}
+          removeFromCart={removeFromCart}
+          add={add}
+          sub={sub}
+        />
       ))}
       {!shoppingCart.length && empty}
       <div className="dropdown-divider"></div>
       <div className="p-2 d-flex justify-content-between align-items-center">
         <div>
           <div className="total-price">
-            Total: <span>${totalCartItems}</span>
+            Total: <span>${total}</span>
           </div>
           <small className="text-muted">
             <i className="fas fa-shipping-fast"></i>: Free Shipping

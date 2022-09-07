@@ -13,6 +13,7 @@ export const allProducts = [
         sit porro.`,
     short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     price: 5990,
+    quantity: 1,
   },
   {
     id: 'iphone-12-mini',
@@ -28,6 +29,7 @@ export const allProducts = [
       sit porro.`,
     short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     price: 6790,
+    quantity: 1,
   },
   {
     id: 'lg-48-a2-4k-oled-tv',
@@ -43,6 +45,7 @@ export const allProducts = [
       sit porro.`,
     short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     price: 9990,
+    quantity: 1,
   },
   {
     id: 'jbl-reflect-mini-true-wireless',
@@ -58,6 +61,7 @@ export const allProducts = [
       sit porro.`,
     short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     price: 1290,
+    quantity: 1,
   },
   {
     id: 'apple-airpods-max-wireless',
@@ -73,6 +77,7 @@ export const allProducts = [
       sit porro.`,
     short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     price: 1290,
+    quantity: 1,
   },
   {
     id: 'trust-gxt-629-tytan-2.1-rgb',
@@ -88,5 +93,6 @@ export const allProducts = [
       sit porro.`,
     short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
     price: 1255,
+    quantity: 1,
   },
 ];

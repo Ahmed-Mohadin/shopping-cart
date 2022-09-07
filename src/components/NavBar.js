@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import ShoppingCart from './cart/ShoppingCart';
 
-function NavBar({ cartCount }) {
+function NavBar({ cart, removeFromCart, add, sub, total }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid container">
@@ -58,7 +58,7 @@ function NavBar({ cartCount }) {
                 >
                   <i className="fas fa-shopping-cart px-1"></i>
                   <span className="border rounded bg-light text-dark px-2 mx-1">
-                    {cartCount}
+                    {cart.length}
                   </span>
                 </button>
                 <div
@@ -82,7 +82,13 @@ function NavBar({ cartCount }) {
                         ></button>
                       </div>
                       <div className="modal-body">
-                        <ShoppingCart />
+                        <ShoppingCart
+                          shoppingCart={cart}
+                          removeFromCart={removeFromCart}
+                          add={add}
+                          sub={sub}
+                          total={total}
+                        />
                       </div>
                     </div>
                   </div>

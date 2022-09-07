@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CartProduct({ product }) {
+function CartProduct({ product, removeFromCart, add, sub }) {
   return (
     <div className="cart-item bg-light">
       <div className="p-2 d-flex justify-content-between align-items-center">
@@ -23,15 +23,15 @@ function CartProduct({ product }) {
           </div>
         </div>
         <div>
-          <button className="btn" onClick={() => console.log('Sub item')}>
+          <button className="btn" onClick={() => sub(product)}>
             -
           </button>
-          <button className="btn" onClick={() => console.log('Add item')}>
+          <button className="btn" onClick={() => add(product)}>
             +
           </button>
           <button
             className="btn btn-danger px-3 ms-2"
-            onClick={() => console.log('Del item')}
+            onClick={() => removeFromCart(product)}
           >
             <i className="fas fa-trash"></i>
           </button>

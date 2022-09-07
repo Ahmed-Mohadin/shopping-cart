@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ProductCard({ product, details }) {
+function ProductCard({ product, details, addToCart }) {
   return (
     <div className="col">
       <div className="card h-100 p-3">
@@ -21,7 +21,7 @@ function ProductCard({ product, details }) {
             <div className="col">
               <button
                 className="btn btn-primary btn-block"
-                onClick={() => console.log('Added to cart')}
+                onClick={() => addToCart(product)}
               >
                 Add To Cart
               </button>
