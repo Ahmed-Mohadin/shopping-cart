@@ -1,24 +1,9 @@
 export const allProducts = [
   {
-    id: 'lenovo-ideapad-3',
-    name: 'Lenovo IdeaPad 3',
+    id: '812superfast',
+    name: '812superfast',
     image:
-      'https://www.elgiganten.se/image/dv_web_D1800010021104586/389809/lenovo-ideapad-3-i58512-14-barbar-dator--pdp_zoom-3000--pdp_main-960.jpg',
-    desc: `
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Error facere rem, molestiae temporibus, soluta blanditiis 
-        doloribus esse sed, sit aperiam ea eius quaerat magni 
-        reiciendis autem adipisci suscipit amet sunt! Voluptate, 
-        nemo. Perferendis asperiores accusamus aperiam cum soluta 
-        sit porro.`,
-    short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    price: 5990,
-  },
-  {
-    id: 'iphone-12-mini',
-    name: 'iPhone 12 Mini',
-    image:
-      'https://www.elgiganten.se/image/dv_web_D180001002783544/234591/iphone-12-mini-5g-smartphone-64-gb-svart--pdp_zoom-3000--pdp_main-960.jpg',
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd560d4f8fc7b0aa906c8ca-line-up-ferrari-812-superfast-v2?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
     desc: `
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
       Error facere rem, molestiae temporibus, soluta blanditiis 
@@ -26,14 +11,17 @@ export const allProducts = [
       reiciendis autem adipisci suscipit amet sunt! Voluptate, 
       nemo. Perferendis asperiores accusamus aperiam cum soluta 
       sit porro.`,
-    short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    price: 6790,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 269999,
+    quantity: 1,
   },
   {
-    id: 'lg-48-a2-4k-oled-tv',
-    name: 'LG 48" A2 4K OLED TV',
+    id: '812gts',
+    name: '812GTS',
     image:
-      'https://www.elgiganten.se/image/dv_web_D1800010021104769/432649/lg-48-a2-4k-oled-tv-2022--pdp_zoom-3000--pdp_main-960.jpg',
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd55c232cdb32285a785f25-line-up-ferrari-812-gts?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
     desc: `
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
       Error facere rem, molestiae temporibus, soluta blanditiis 
@@ -41,14 +29,17 @@ export const allProducts = [
       reiciendis autem adipisci suscipit amet sunt! Voluptate, 
       nemo. Perferendis asperiores accusamus aperiam cum soluta 
       sit porro.`,
-    short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    price: 9990,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 280000,
+    quantity: 1,
   },
   {
-    id: 'jbl-reflect-mini-true-wireless',
-    name: 'JBL Reflect Mini True Wireless',
+    id: 'sf90-strardale',
+    name: 'SF90 strardale',
     image:
-      'https://www.elgiganten.se/image/dv_web_D180001002534373/211551/jbl-reflect-mini-true-wireless-in-ear-horlurar-vit--pdp_zoom-3000--pdp_main-960.jpg',
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd552852cdb32285a785d2e-line-up-ferrari-sf90-stradale?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
     desc: `
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
       Error facere rem, molestiae temporibus, soluta blanditiis 
@@ -56,14 +47,17 @@ export const allProducts = [
       reiciendis autem adipisci suscipit amet sunt! Voluptate, 
       nemo. Perferendis asperiores accusamus aperiam cum soluta 
       sit porro.`,
-    short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    price: 1290,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 259999,
+    quantity: 1,
   },
   {
-    id: 'apple-airpods-max-wireless',
-    name: 'Apple AirPods Max Wireless',
+    id: 'f8-tributo',
+    name: 'F8 tributo',
     image:
-      'https://www.elgiganten.se/image/dv_web_D1800010021004140/465968/apple-airpods-max-tradlosa-around-ear-horlurar-sky-blue--pdp_zoom-3000--pdp_main-960.jpg',
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd552850cf6995f44de91fb-line-up-ferrari-f8-tributo?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
     desc: `
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
       Error facere rem, molestiae temporibus, soluta blanditiis 
@@ -71,14 +65,17 @@ export const allProducts = [
       reiciendis autem adipisci suscipit amet sunt! Voluptate, 
       nemo. Perferendis asperiores accusamus aperiam cum soluta 
       sit porro.`,
-    short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    price: 1290,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 299999,
+    quantity: 1,
   },
   {
-    id: 'trust-gxt-629-tytan-2.1-rgb',
-    name: 'Trust GXT 629 Tytan 2.1 RGB',
+    id: 'f8-spider',
+    name: 'F8 spider',
     image:
-      'https://www.elgiganten.se/image/dv_web_D18000100294335/TRUGXT629/trust-gxt-629-tytan-21-rgb-hogtalarset--pdp_zoom-3000--pdp_main-960.jpg',
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd55285f8fc7b0aa906c5dc-line-up-ferrari-f8-spider?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
     desc: `
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
       Error facere rem, molestiae temporibus, soluta blanditiis 
@@ -86,7 +83,154 @@ export const allProducts = [
       reiciendis autem adipisci suscipit amet sunt! Voluptate, 
       nemo. Perferendis asperiores accusamus aperiam cum soluta 
       sit porro.`,
-    short: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    price: 1255,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 310000,
+    quantity: 1,
+  },
+  {
+    id: '488-pista',
+    name: '488 PISTA',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd5528584077c3b243282c5-line-up-ferrari-488-pista?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 320000,
+    quantity: 1,
+  },
+  {
+    id: '488-pista-spider',
+    name: '488 PISTA SPIDER',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd5528584077c3b243282c3-line-up-ferrari-488-pista-spider?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 329999,
+    quantity: 1,
+  },
+  {
+    id: 'gtc4lusso',
+    name: 'GTC4LUSSO',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd552852cdb32285a785d2d-line-up-ferrari-gtc4lusso?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 359999,
+    quantity: 1,
+  },
+  {
+    id: 'roma',
+    name: 'ROMA',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd55285f8fc7b0aa906c5da-line-up-ferrari-roma?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 350000,
+    quantity: 1,
+  },
+  {
+    id: 'gtc8-lusso-t',
+    name: 'GTC8 LUSSO T',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd5528584077c3b243282c4-line-up-ferrari-gtc4lusso-t?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 369999,
+    quantity: 1,
+  },
+  {
+    id: 'portfino-m',
+    name: 'Portfino M',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5f61bee9966ae519cbd684fc?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 319999,
+    quantity: 1,
+  },
+  {
+    id: 'monza-sp1',
+    name: 'MONZA SP1',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd55285f8fc7b0aa906c5db-line-up-ferrari-monza-sp1?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 379999,
+    quantity: 1,
+  },
+  {
+    id: 'monza-sp2',
+    name: 'MONZA SP2',
+    image:
+      'https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd552850cf6995f44de91fa-line-up-ferrari-monza-sp2?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750',
+    desc: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Error facere rem, molestiae temporibus, soluta blanditiis 
+      doloribus esse sed, sit aperiam ea eius quaerat magni 
+      reiciendis autem adipisci suscipit amet sunt! Voluptate, 
+      nemo. Perferendis asperiores accusamus aperiam cum soluta 
+      sit porro.`,
+    short: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Error facere rem, molestiae temporibus, soluta blanditiis...
+    `,
+    price: 399999,
+    quantity: 1,
   },
 ];

@@ -6,7 +6,6 @@ function Footer() {
       <p>
         Built by
         <a
-          className="text-decoration-none"
           href="https://github.com/Ahmed-Mohadin/"
           target="_blank"
           rel="noreferrer"
@@ -15,7 +14,6 @@ function Footer() {
         </a>
         |
         <a
-          className="text-decoration-none"
           href="https://github.com/Ahmed-Mohadin/shopping-cart"
           target="_blank"
           rel="noreferrer"
