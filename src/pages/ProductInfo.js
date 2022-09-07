@@ -6,8 +6,7 @@ import { allProducts as products } from '../data/allProducts';
 function ProductInfo({ addToCart }) {
   const id = useParams().id;
   return (
-    // <div>{product && <ProductCard product={product} details={true} />}</div>
-    <>
+    <div className="product-card-info">
       {products.map((product) => {
         if (product.id === id) {
           return (
@@ -21,7 +20,7 @@ function ProductInfo({ addToCart }) {
         }
         return null;
       })}
-    </>
+    </div>
   );
 }
 

@@ -3,41 +3,29 @@ import { Link } from 'react-router-dom';
 
 function ProductCard({ product, details, addToCart }) {
   return (
-    <div className="col">
-      <div className="card h-100 p-3">
-        {details && <h1 className="text-center mt-4">{product.name}</h1>}
-        <img src={product.image} alt="..." className="card-img-top" />
-        <div className="card-body">
-          {!details && <h5 className="card-title">{product.name}</h5>}
-          <div className="card-text">
-            {details ? <p>{product.desc}</p> : <p>{product.short}</p>}
-            <p className="h5">
-              Price: $<span className="text-danger">{product.price}</span>
-            </p>
-          </div>
-          <div
-            className={`row row-cols-2 ${!details && 'row-cols-lg-2'} g-2 mt-3`}
-          >
-            <div className="col">
-              <button
-                className="btn btn-primary btn-block"
-                onClick={() => addToCart(product)}
-              >
-                Add To Cart
-              </button>
-            </div>
-
-            {!details && (
-              <div className="col">
-                <Link
-                  className="btn btn-info btn-block float-end"
-                  to={`/products/${product.id}`}
-                >
-                  Read more<i className="fas fa-arrow-right ps-2"></i>
-                </Link>
-              </div>
-            )}
-          </div>
+    <div className="product-card">
+      <img src={product.image} alt={product.name} className="product-image" />
+      <div className="product-info">
+        <h3 className="product-name">{product.name}</h3>
+        <div className="product-text">
+          {details ? (
+            <p className="product-desc">{product.desc}</p>
+          ) : (
+            <p className="product-short">{product.short}</p>
+          )}
+          <p className="product-price">
+            Price: $<span className="price">{product.price}</span>
+          </p>
+        </div>
+        <div className={`product-btn ${details ? 'product-btns' : null}`}>
+          <button className="btn btn-add" onClick={() => addToCart(product)}>
+            Add To Cart
+          </button>
+          {!details && (
+            <Link className="btn btn-info" to={`/products/${product.id}`}>
+              Read More<i className="fa-solid fa-arrow-right"></i>
+            </Link>
+          )}
         </div>
       </div>
     </div>

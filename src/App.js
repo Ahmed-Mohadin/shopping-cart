@@ -6,7 +6,8 @@ import About from './pages/About';
 import Products from './pages/Products';
 import ProductInfo from './pages/ProductInfo';
 import Footer from './components/Footer';
-import './App.css';
+import './styles/style.css';
+import ShoppingCart from './components/cart/ShoppingCart';
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -83,6 +84,18 @@ function App() {
           <Route
             path="/products/:id"
             element={<ProductInfo addToCart={addItem} />}
+          />
+          <Route
+            path="/shopping-cart"
+            element={
+              <ShoppingCart
+                shoppingCart={cart}
+                removeFromCart={removeItem}
+                add={add}
+                sub={sub}
+                total={totalPrice}
+              />
+            }
           />
         </Routes>
       </div>
