@@ -19,35 +19,35 @@ function App() {
   }, [cart]);
 
   const addItem = (item) => {
-    const findItem = cart.some((product) => product.id === item.id);
-    if (!findItem) {
+    const itemInCart = cart.some((product) => product.id === item.id);
+    if (!itemInCart) {
       setCart([...cart, item]);
       sumOfPrice();
-    } else add(item);
+    } else incQuantity(item);
   };
 
-  const add = (item) => {
-    const newState = cart.map((product) => {
+  const incQuantity = (item) => {
+    const newQuantity = cart.map((product) => {
       if (product.id === item.id) {
         return { ...product, quantity: product.quantity + 1 };
       }
       return product;
     });
-    setCart(newState);
+    setCart(newQuantity);
     sumOfPrice();
   };
 
-  const sub = (item) => {
-    const newCart = cart.map((product) => {
+  const decQuantity = (item) => {
+    const newQuantity = cart.map((product) => {
       if (product.id === item.id) {
         return { ...product, quantity: product.quantity - 1 };
       }
       return product;
     });
-    setCart(checkSub(newCart));
+    setCart(checkQuantity(newQuantity));
   };
 
-  const checkSub = (newCart) => {
+  const checkQuantity = (newCart) => {
     const fixedCart = newCart.filter((product) => product.quantity !== 0);
     sumOfPrice();
     return fixedCart;
@@ -69,13 +69,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar
-        cart={cart}
-        removeFromCart={removeItem}
-        add={add}
-        sub={sub}
-        total={totalPrice}
-      />
+      <NavBar cart={cart} />
       <div className="container mt-5">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -91,9 +85,9 @@ function App() {
               <ShoppingCart
                 shoppingCart={cart}
                 removeFromCart={removeItem}
-                add={add}
-                sub={sub}
-                total={totalPrice}
+                incQuantity={incQuantity}
+                decQuantity={decQuantity}
+                totalPrice={totalPrice}
               />
             }
           />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CartProduct({ product, removeFromCart, add, sub }) {
+function CartProduct({ product, removeFromCart, incQuantity, decQuantity }) {
   return (
     <div className="cart-product">
       <img src={product.image} alt={product.name} className="product-image" />
@@ -11,10 +11,10 @@ function CartProduct({ product, removeFromCart, add, sub }) {
           {product.quantity} x {product.price}
         </small>
         <div className="btn-product">
-          <button className="btn btn-sub" onClick={() => sub(product)}>
+          <button className="btn btn-sub" onClick={() => decQuantity(product)}>
             -
           </button>
-          <button className="btn btn-add" onClick={() => add(product)}>
+          <button className="btn btn-add" onClick={() => incQuantity(product)}>
             +
           </button>
           <button

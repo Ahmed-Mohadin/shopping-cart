@@ -1,7 +1,13 @@
 import React from 'react';
 import CartProduct from './CartProduct';
 
-function ShoppingCart({ shoppingCart, removeFromCart, add, sub, total }) {
+function ShoppingCart({
+  shoppingCart,
+  removeFromCart,
+  incQuantity,
+  decQuantity,
+  totalPrice,
+}) {
   const empty = <div className="empty">Your cart is empty</div>;
   return (
     <div className="shopping-cart">
@@ -11,8 +17,8 @@ function ShoppingCart({ shoppingCart, removeFromCart, add, sub, total }) {
             product={product}
             key={product.id}
             removeFromCart={removeFromCart}
-            add={add}
-            sub={sub}
+            incQuantity={incQuantity}
+            decQuantity={decQuantity}
           />
         ))}
         {!shoppingCart.length && empty}
@@ -22,7 +28,7 @@ function ShoppingCart({ shoppingCart, removeFromCart, add, sub, total }) {
           <>
             <div>
               <div className="total-price">
-                Total: <span className="total">${total}</span>
+                Total: <span className="total">${totalPrice}</span>
               </div>
               <small className="free-shipping">
                 <i className="fas fa-shipping-fast"></i>: Free Shipping
