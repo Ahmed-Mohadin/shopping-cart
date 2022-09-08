@@ -20,7 +20,7 @@ function NavBar({ cart }) {
           <Link to="/about">About</Link>
         </li>
         <li className="link-item cart-link">
-          <Link to="/shopping-cart" className="link-cart">
+          <Link to="/cart" className="link-cart">
             <i className="fa-sharp fa-solid fa-cart-shopping"></i>
           </Link>
           <span className="cart-count">{cart.length}</span>

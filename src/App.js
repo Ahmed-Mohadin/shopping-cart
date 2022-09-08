@@ -80,7 +80,7 @@ function App() {
             element={<ProductInfo addToCart={addItem} />}
           />
           <Route
-            path="/shopping-cart"
+            path="/cart"
             element={
               <ShoppingCart
                 shoppingCart={cart}
