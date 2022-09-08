@@ -72,15 +72,18 @@ function App() {
       <NavBar cart={cart} />
       <div className="container mt-5">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products addToCart={addItem} />} />
+          <Route path="/shopping-cart" element={<Home />} />
+          <Route path="/shopping-cart/about" element={<About />} />
           <Route
-            path="/products/:id"
+            path="/shopping-cart/products"
+            element={<Products addToCart={addItem} />}
+          />
+          <Route
+            path="/shopping-cart/products/:id"
             element={<ProductInfo addToCart={addItem} />}
           />
           <Route
-            path="/cart"
+            path="/shopping-cart/cart"
             element={
               <ShoppingCart
                 shoppingCart={cart}

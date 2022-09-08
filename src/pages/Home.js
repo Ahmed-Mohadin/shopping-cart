@@ -13,7 +13,7 @@ function Home() {
           A LEGEND IS <span className="reborn">REBORN</span>
         </h2>
         <button className="btn shop">
-          <Link to="/products">Shop Now</Link>
+          <Link to="/shopping-cart/products">Shop Now</Link>
         </button>
       </div>
     </div>

@@ -22,7 +22,10 @@ function ProductCard({ product, details, addToCart }) {
             Add To Cart
           </button>
           {!details && (
-            <Link className="btn btn-info" to={`/products/${product.id}`}>
+            <Link
+              className="btn btn-info"
+              to={`/shopping-cart/products/${product.id}`}
+            >
               Read More<i className="fa-solid fa-arrow-right"></i>
             </Link>
           )}
